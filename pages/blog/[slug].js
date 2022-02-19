@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Layout from '@/components/Layout';
 import CategoryLabel from '@/components/CategoryLabel';
 import matter from 'gray-matter';
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from 'react-markdown';
 
 const PostPage = ({
   frontmatter: {
@@ -39,10 +39,7 @@ const PostPage = ({
           <div className="mr-4">{date}</div>
         </div>
         <div className="blog-text mt-2">
-          <ReactMarkdown children={content} />
-          {/* <div
-            dangerouslySetInnerHTML={{ __html: marked(content) }}
-          ></div> */}
+          <ReactMarkdown>{children}</ReactMarkdown>
         </div>
       </div>
     </Layout>
