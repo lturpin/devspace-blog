@@ -18,6 +18,7 @@ const PostPage = ({
   content,
   slug,
 }) => {
+  console.log('content:', content);
   return (
     <Layout title={title}>
       <Link href="/blog">Go Back</Link>
@@ -39,7 +40,10 @@ const PostPage = ({
           <div className="mr-4">{date}</div>
         </div>
         <div className="blog-text mt-2">
-          <ReactMarkdown>{children}</ReactMarkdown>
+          <ReactMarkdown>
+            {content}
+          </ReactMarkdown>
+
         </div>
       </div>
     </Layout>
