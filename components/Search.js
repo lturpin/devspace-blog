@@ -35,7 +35,7 @@ export default function Search() {
               className="bg-white h-10 px-5 pr-10 rounded-full
             text-sm focus:outline-none w-72"
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={(e) => setSearchTerm(e.target.value.toLowerCase())}
               placeholder="Search Posts..."
             />
             <FaSearch
