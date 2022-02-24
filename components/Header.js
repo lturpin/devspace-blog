@@ -34,7 +34,7 @@ const Header = () => {
               Blog
             </a>
           </Link>
-          <Link href="/blog">
+          <Link href="/about">
             <a
               className="mx-5 cursor-pointer uppercase
             hover:text-indigo-300"
