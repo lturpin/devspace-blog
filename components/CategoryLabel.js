@@ -5,6 +5,7 @@ export default function CategoryLabel({ children }) {
     JavaScript: 'yellow',
     CSS: 'blue',
     Python: 'green',
+    React: 'green',
     PHP: 'purple',
     Ruby: 'red',
   };

@@ -13,15 +13,15 @@ const Layout = ({ title, keywords, description, children }) => {
       </Head>
       <Header />
       <Search />
-      <main className='container mx-auto my-7'>{children}</main>
+      <main className="container mx-auto my-7">{children}</main>
     </div>
   );
 };
 
 Layout.defaultProps = {
-  title: 'Welcome to DevSpace',
+  title: 'Welcome to I Love Coding',
   keywords: 'development, coding, programming',
-  description: 'The best info and news in development'
-}
+  description: 'The best place to learn coding',
+};
 
 export default Layout;

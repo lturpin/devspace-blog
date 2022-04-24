@@ -3,23 +3,24 @@ import Image from 'next/image';
 
 const Header = () => {
   return (
-    <header className="bg-gray-900 text-gray-100 shadow w-full">
-      <div
+    <header className="bg-gray-900 text-gray-100 shadow h-20 w-full items-center justify-center flex flex-row">
+      {/* <div
         className="container mx-auto flex flex-wrap p-5 
       flex-col md:flex-row items-center"
-      >
+      > */}
         <Link href="/">
           <a
-            className="flex md:w-1/5 title-font font-medium
-          items-center md:justify-start mb-4 md:mb-0"
+            className="flex w-1/2 title-font font-medium
+          items-center md:justify-start mb-4 mb-0"
           >
-            <Image
-              src="/images/logo.png"
+             <h1 className="text-2xl text-gray-100 bg-gray-600 ml-4 px-4 rounded py-1  tracking-wider">I <span className="text-xl">❤️</span> <span> CODING</span></h1> 
+            {/* <Image
+              src="/images/notebook.svg"
               width={40}
               height={40}
               alt="logo"
             />
-            <span className="ml-3 text-xl">DevSpace</span>
+            <span className="ml-3 text-xl">I Love Coding</span> */}
           </a>
         </Link>
         <nav
@@ -43,7 +44,7 @@ const Header = () => {
             </a>
           </Link>
         </nav>
-      </div>
+      {/* </div> */}
     </header>
   );
 };
