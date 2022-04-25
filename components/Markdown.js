@@ -160,7 +160,7 @@ const dark = {
 export default function Markdown({content}) {
   return (
     <ReactMarkdown
-      children={content}
+    children={content}
       components={{
         code({ node, inline, className, children, ...props }) {
           const match = /language-(\w+)/.exec(className || '');

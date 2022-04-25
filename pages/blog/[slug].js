@@ -9,7 +9,6 @@ import Markdown from '@/components/Markdown';
 // import { PrismAsync as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-
 const PostPage = ({
   frontmatter: {
     title,
@@ -33,17 +32,17 @@ const PostPage = ({
             <CategoryLabel>{category}</CategoryLabel>
           </div>
           {cover_video && (
-          <div className="iframe-container">
-          <iframe
-            width="560"
-            height="315"
-            src={cover_video}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-          </div>
+            <div className="iframe-container">
+              <iframe
+                width="560"
+                height="315"
+                src={cover_video}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           )}
           {/* {cover_image && <img src={cover_image} alt="" className="w-full rounded" /> } */}
           <div className="flex justify-between items-center bg-gray-100 p-2 my-8">
